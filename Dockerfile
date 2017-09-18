@@ -14,7 +14,3 @@ RUN curl http://public.pengutronix.de/software/ptxdist/ptxdist-${ptxdist}.tar.bz
 	&& rm -rf ptxdist-${ptxdist}
 
 RUN useradd -ms /bin/bash user
-
-#WORKDIR /home/user
-
-#USER user
