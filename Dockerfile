@@ -1,4 +1,4 @@
-FROM timotto/ubuntu-compiler:14.04
+FROM timotto/ubuntu-compiler:16.04
 
 ARG ptxdist=2014.12.0
 
