@@ -1,9 +1,7 @@
 FROM timotto/ubuntu-compiler:14.04
 
-ARG ptxdist=2016.06.0
-
-RUN curl http://public.pengutronix.de/software/ptxdist/ptxdist-${ptxdist}.tar.bz2 | tar jx \
-	&& cd ptxdist-${ptxdist} \
+RUN curl http://public.pengutronix.de/software/ptxdist/ptxdist-2016.06.0.tar.bz2 | tar jx \
+	&& cd ptxdist-2016.06.0 \
 	&& ./autogen.sh \
 	&& ./configure --prefix=/usr/local \
 	&& make -j4 \
