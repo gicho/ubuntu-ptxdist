@@ -1,7 +1,7 @@
 FROM ubuntu
 ENV DEBIAN_FRONTEND noninteractive
 RUN apt update && apt install -y --no-install-recommends apt-utils curl libncurses5-dev gawk flex bison texinfo python-dev g++ dialog lzop autoconf libtool xmlstarlet xsltproc doxygen autopoint
-RUN curl https://public.pengutronix.de/software/ptxdist/ptxdist-2016.06.0.tar.bz2 | tar jxf \
+RUN curl https://public.pengutronix.de/software/ptxdist/ptxdist-2016.06.0.tar.bz2 | tar jx \
 	&& cd ptxdist-2016.06.0 \
 	&& ./autogen.sh \
 	&& ./configure --prefix=/usr/local \
