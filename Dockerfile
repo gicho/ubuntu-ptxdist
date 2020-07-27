@@ -1,6 +1,6 @@
 FROM timotto/ubuntu-compiler:14.04
 
-RUN curl http://public.pengutronix.de/software/ptxdist/ptxdist-2016.06.0.tar.bz2 | tar jx \
+RUN curl https://public.pengutronix.de/software/ptxdist/ptxdist-2016.06.0.tar.bz2 | tar jx \
 	&& cd ptxdist-2016.06.0 \
 	&& ./autogen.sh \
 	&& ./configure --prefix=/usr/local \
